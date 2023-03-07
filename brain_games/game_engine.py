@@ -19,4 +19,4 @@ def start_game(game_name):
         print('Correct!')
         counter += 1
     else:
-        print(f'Congratulation, {name}!')
+        print(f'Congratulations, {name}!')
