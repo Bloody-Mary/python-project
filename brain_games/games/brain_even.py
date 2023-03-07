@@ -1,6 +1,8 @@
 from random import randint
 
+
 game_rule = 'Answer "yes" if the number is even, otherwise answer "no".'
+
 
 def question_and_answer():
     rand_num = randint(1, 100)

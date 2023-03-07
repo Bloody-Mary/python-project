@@ -1,6 +1,8 @@
 import prompt
 
+
 score = 3
+
 
 def start_game(game_name):
     print('Welcome to the Brain Games!')
@@ -13,7 +15,8 @@ def start_game(game_name):
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
         if not (answer == correct_answer):
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{answer}' is wrong answer ;.")
+            print("Correct answer was '{correct_answer}'.")
             print("Let's try again, {name}!")
             break
         print('Correct!')

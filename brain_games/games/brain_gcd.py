@@ -1,7 +1,9 @@
 from random import randint
 import math
 
+
 game_rule = 'Find the greatest common divisor of given numbers.'
+
 
 def question_and_answer():
     num1 = randint(0, 50)
