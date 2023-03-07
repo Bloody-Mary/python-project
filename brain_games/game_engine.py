@@ -15,9 +15,9 @@ def start_game(game_name):
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
         if not (answer == correct_answer):
-            print(f"'{answer}' is wrong answer ;.")
-            print("Correct answer was '{correct_answer}'.")
-            print("Let's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.\n"
+                  f"Let\'s try again, {name}!")
             break
         print('Correct!')
         counter += 1
