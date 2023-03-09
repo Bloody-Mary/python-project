@@ -13,24 +13,24 @@
 
 ## Установка и запуск
 
-https://asciinema.org/a/u8eb0JPCoSRsOzImHKlqXevxC
+[![asciicast](https://asciinema.org/a/u8eb0JPCoSRsOzImHKlqXevxC.png)](https://asciinema.org/a/u8eb0JPCoSRsOzImHKlqXevxC)
 
 ## Brain-calc
 
-https://asciinema.org/a/AmFcUSclDIE23dhHU87sYKyI5
+[![asciicast](https://asciinema.org/a/AmFcUSclDIE23dhHU87sYKyI5.png)](https://asciinema.org/a/AmFcUSclDIE23dhHU87sYKyI5)
 
 ## Brain-even
 
-https://asciinema.org/a/hprWuZhMNbHMXzoyrvPuhG58D
+[![asciicast](https://asciinema.org/a/hprWuZhMNbHMXzoyrvPuhG58D.png)](https://asciinema.org/a/hprWuZhMNbHMXzoyrvPuhG58D)
 
 ## Brain-gcd
 
-https://asciinema.org/a/pJWjCplwQqvcgypJLXRxU3Yhq
+[![asciicast](https://asciinema.org/a/pJWjCplwQqvcgypJLXRxU3Yhq.png)](https://asciinema.org/a/pJWjCplwQqvcgypJLXRxU3Yhq)
 
 ## Brain-progression
 
-https://asciinema.org/a/JaaGQ8CAsRC86E6IhsPbI7bLU
+[![asciicast](https://asciinema.org/a/JaaGQ8CAsRC86E6IhsPbI7bLU.png)](https://asciinema.org/a/JaaGQ8CAsRC86E6IhsPbI7bLU)
 
 ## Brain-prime
 
-https://asciinema.org/a/BmtV65ddOPTzR2t4MGZeQ0M2Q
+[![asciicast](https://asciinema.org/a/BmtV65ddOPTzR2t4MGZeQ0M2Q.png)](https://asciinema.org/a/BmtV65ddOPTzR2t4MGZeQ0M2Q)
