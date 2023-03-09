@@ -11,4 +11,4 @@ def question_and_answer():
 
     correct_answer = math.gcd(num1, num2)
     question = f'{num1} {num2}'
-    return correct_answer, question
+    return str(correct_answer), question
