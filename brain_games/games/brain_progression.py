@@ -1,7 +1,7 @@
 from random import randint
 
 
-game_rule = 'What number is missing in the progression?'
+GAME_RULE = 'What number is missing in the progression?'
 
 
 def question_and_answer():
@@ -17,5 +17,5 @@ def question_and_answer():
     hidden = randint(0, progression - 1)
     correct_answer = result[hidden]
     result[hidden] = '..'
-    question = ' '.join(str(x) for x in progression)
+    question = ' '.join(str(x) for x in result)
     return str(correct_answer), question

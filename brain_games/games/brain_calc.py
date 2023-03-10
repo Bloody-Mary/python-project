@@ -2,7 +2,7 @@ from random import randint, choice
 from operator import add, sub, mul
 
 
-game_rule = 'What is the result of the expression?'
+GAME_RULE = 'What is the result of the expression?'
 
 
 def question_and_answer():

@@ -2,7 +2,7 @@ from random import randint
 import math
 
 
-game_rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def prime_number(num):
@@ -19,4 +19,4 @@ def prime_number(num):
 def question_and_answer():
     question = randint(0, 50)
     correct_answer = 'yes' if prime_number(question) else 'no'
-    return correct_answer, question
+    return str(correct_answer), question
