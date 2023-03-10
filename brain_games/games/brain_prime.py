@@ -17,6 +17,6 @@ def prime_number(num):
 
 
 def question_and_answer():
-    question = randint(0, 50)
+    question = randint(1, 50)
     correct_answer = 'yes' if prime_number(question) else 'no'
     return str(correct_answer), question
