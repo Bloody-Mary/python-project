@@ -1,5 +1,4 @@
 from random import randint, choice
-from operator import add, sub, mul
 
 
 GAME_RULE = 'What is the result of the expression?'

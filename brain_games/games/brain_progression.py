@@ -8,7 +8,6 @@ def question_and_answer():
     prog_step = randint(1, 9)
     num_first = randint(1, 10)
     progression = randint(5, 10)
-    
     result = []
     i = 0
     while i < progression:
