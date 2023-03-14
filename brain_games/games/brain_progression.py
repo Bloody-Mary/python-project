@@ -4,15 +4,21 @@ from random import randint
 GAME_RULE = 'What number is missing in the progression?'
 
 
-def question_and_answer():
-    prog_step = randint(1, 9)
-    num_first = randint(1, 10)
-    progression = randint(5, 10)
+PROG_STEP = randint(1, 9)
+NUM_FIRST = randint(1, 10)
+PROGRESSION_STEP = (5, 10)
+
+
+def make_progression(NUM_FIRST, PROG_STEP, PROGRESSION_STEP):
     result = []
-    i = 0
-    while i < progression:
-        result.append(num_first + prog_step * i)
-        i += 1
+    for _ in range(PROGRESSION_STEP):
+        next_number = num_first + prog_step
+        result.append(next_number)
+        num_first = next_number
+    return result
+
+
+def get_question_and_answer():
     hidden = randint(0, progression - 1)
     correct_answer = result[hidden]
     result[hidden] = '..'
