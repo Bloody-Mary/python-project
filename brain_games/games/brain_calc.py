@@ -7,7 +7,7 @@ NUM2 = randint(1, 50)
 OPERATIONS = ('+', '-', '*')
 
 
-def operation_choice(operation, NUM1, NUM2):
+def operation_choice(operation, correct_answer, NUM1, NUM2):
     if operation == '+':
         correct_answer = NUM1 + NUM2
     elif operation == '-':
