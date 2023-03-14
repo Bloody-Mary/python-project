@@ -14,6 +14,6 @@ def bool_answer(number):
 
 
 def get_question_and_answer():
-    question = str(RAND_NUM)
+    question = RAND_NUM
     correct_answer = bool_answer(question)
     return correct_answer, question
