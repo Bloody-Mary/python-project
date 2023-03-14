@@ -1,4 +1,4 @@
-from random import randint, choice
+from random import randint, choice, calculate
 
 
 GAME_RULE = 'What is the result of the expression?'
