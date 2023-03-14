@@ -6,8 +6,8 @@ RAND_NUM = randint(1, 100)
 ANSWER = {True: 'yes', False: 'no'}
 
 
-def bool_answer(number):
-    if number % 2 == 0:
+def bool_answer(question):
+    if question % 2 == 0:
         return ANSWER[True]
     else:
         return ANSWER[False]
