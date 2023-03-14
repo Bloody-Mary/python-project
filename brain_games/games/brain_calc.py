@@ -20,4 +20,4 @@ def operation_choice(operation, NUM1, NUM2):
 def get_question_and_answer():
     operation = choice(OPERATIONS)
     question = f"{num1} {operation} {num2}"
-    return str(correct_answer), question
+    return correct_answer, question
