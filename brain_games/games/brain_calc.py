@@ -1,4 +1,4 @@
-from random import randint, choice, calculate
+from random import randint, choice
 
 
 GAME_RULE = 'What is the result of the expression?'
@@ -20,5 +20,5 @@ def operation_choice(operation, NUM1, NUM2):
 def get_question_and_answer():
     operation = choice(OPERATIONS)
     question = f"{NUM1} {operation} {NUM2}"
-    correct_answer = str(calculate(operation, NUM1, NUM2))
+    correct_answer = str(operation_choice(operation, NUM1, NUM2))
     return correct_answer, question
