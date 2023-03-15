@@ -10,7 +10,7 @@ PROGRESSION_STEP = (5, 10)
 
 
 def make_progression(NUM_FIRST, PROG_STEP, PROGRESSION_STEP):
-    result = [NUM_FIRST, ]
+    result = []
     for _ in range(PROGRESSION_STEP):
         next_number = num_first + prog_step
         result.append(next_number)
@@ -19,6 +19,7 @@ def make_progression(NUM_FIRST, PROG_STEP, PROGRESSION_STEP):
 
 
 def get_question_and_answer():
+    result = make_progression()
     hidden = randint(0, len(PROGRESSION_STEP) - 1)
     correct_answer = result[hidden]
     result[hidden] = '..'
