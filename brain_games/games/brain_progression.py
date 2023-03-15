@@ -10,7 +10,7 @@ PROGRESSION_STEP = (5, 10)
 
 
 def make_progression(NUM_FIRST, PROG_STEP, PROGRESSION_STEP):
-    result = []
+    result = [NUM_FIRST, ]
     for _ in range(PROGRESSION_STEP):
         next_number = num_first + prog_step
         result.append(next_number)
