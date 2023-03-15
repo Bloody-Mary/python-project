@@ -7,7 +7,7 @@ GAME_RULE = 'What number is missing in the progression?'
 def make_progression():
     PROG_STEP = randint(1, 9)
     NUM_FIRST = randint(1, 10)
-    PROGRESSION_STEP = (5, 10)
+    PROGRESSION_STEP = randint(5, 10)
     result = []
     for _ in range(PROGRESSION_STEP):
         next_number = num_first + prog_step
