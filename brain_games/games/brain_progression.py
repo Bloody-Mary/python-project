@@ -2,12 +2,12 @@ from random import randint
 
 
 GAME_RULE = 'What number is missing in the progression?'
+prog_step = randint(1, 9)
+num_first = randint(1, 10)
+progression_step = randint(5, 10)
 
 
 def make_progression():
-    prog_step = randint(1, 9)
-    num_first = randint(1, 10)
-    progression_step = randint(5, 10)
     result = []
     for _ in range(progression_step):
         next_number = num_first + prog_step
