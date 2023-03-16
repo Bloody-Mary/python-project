@@ -25,4 +25,4 @@ def get_question_and_answer():
     correct_answer = result[hidden]
     result[hidden] = '..'
     question = ' '.join(str(x) for x in result)
-    return str(correct_answer), question
+    return question, str(correct_answer)
