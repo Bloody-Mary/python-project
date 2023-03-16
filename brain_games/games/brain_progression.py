@@ -17,10 +17,10 @@ def make_progression(min_num, max_num, min_step, max_step, prog_len):
 
 def get_question_and_answer():
     result = make_progression(min_num = 1,
-            max_num = 10,
+            max_num = 50,
             min_step = 1,
-            max_step = 30,
-            prog_len = 10)
+            max_step = 10,
+            prog_len = 15)
     hidden = randint(0, len(result) - 1)
     correct_answer = result[hidden]
     result[hidden] = '..'
