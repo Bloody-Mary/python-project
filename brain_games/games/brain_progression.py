@@ -8,6 +8,8 @@ progression_step = randint(5, 10)
 
 
 def make_progression():
+    global num_first
+    global prog_step
     result = []
     for _ in range(progression_step):
         next_number = num_first + prog_step
