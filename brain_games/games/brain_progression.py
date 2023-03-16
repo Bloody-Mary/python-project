@@ -21,7 +21,7 @@ def get_question_and_answer():
             min_step = 1,
             max_step = 30,
             prog_len = 10)
-    hidden = randint(0, len(prog_step) - 1)
+    hidden = randint(0, len(prog_len) - 1)
     correct_answer = result[hidden]
     result[hidden] = '..'
     question = ' '.join(str(x) for x in result)
