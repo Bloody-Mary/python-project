@@ -24,5 +24,5 @@ def get_question_and_answer():
     hidden = randint(0, len(result) - 1)
     correct_answer = result[hidden]
     result[hidden] = '..'
-    question = ' '.join(str(x) for x in result)
+    question = ' '.join(map(str, result))
     return question, str(correct_answer)
