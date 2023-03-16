@@ -20,7 +20,7 @@ def make_progression():
 
 def get_question_and_answer():
     result = make_progression()
-    hidden = randint(0, len(progression_step) - 1)
+    hidden = randint(0, progression_step - 1)
     correct_answer = result[hidden]
     result[hidden] = '..'
     question = ' '.join(str(x) for x in result)
