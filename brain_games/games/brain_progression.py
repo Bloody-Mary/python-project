@@ -2,26 +2,27 @@ from random import randint
 
 
 GAME_RULE = 'What number is missing in the progression?'
-prog_step = randint(1, 9)
-num_first = randint(1, 10)
-progression_step = randint(5, 10)
+PROG_STEP = randint(1, 9)
+NUM_FIRST = randint(1, 10)
+PROGRESSION_LEN = 10
 
 
 def make_progression():
-    global num_first
-    global prog_step
+    global NUM_FIRST
+    global PROG_STEP
     result = []
-    for _ in range(progression_step):
-        next_number = num_first + prog_step
-        result.append(next_number)
-        num_first = next_number
-    return result
+    hidden = randint(0, PROGRESSION_LEN - 1)
+    last_num = NUM_FIRST
+    for _ in range(PROGRESSION_LEN):
+        next_number = last_num + PROG_STEP
+        last_num = next_num
+        result.append(next_num)
+    return result, hidden
 
 
 def get_question_and_answer():
-    result = make_progression()
-    hidden = randint(0, len(result) - 1)
-    correct_answer = result[hidden]
-    result[hidden] = '..'
-    question = ' '.join(str(x) for x in result)
-    return question, str(correct_answer)
+    result, hidden = make_progression()
+    correct_answer = result.pop(hidden)
+    result.insert(hidden, "..")
+    question = " ".join(map(str, result))
+    return str(correct_answer), question
