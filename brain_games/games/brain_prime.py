@@ -25,5 +25,6 @@ def bool_answer(QUESTION):
 
 
 def get_question_and_answer():
-    correct_answer = str(bool_answer(QUESTION))
+    correct_answer = bool_answer(QUESTION)
+    question = str(QUESTION)
     return str(correct_answer), question
