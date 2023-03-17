@@ -14,7 +14,7 @@ def make_progression():
     hidden = randint(0, PROGRESSION_LEN - 1)
     last_num = NUM_FIRST
     for _ in range(PROGRESSION_LEN):
-        next_number = last_num + PROG_STEP
+        next_num = last_num + PROG_STEP
         last_num = next_num
         result.append(next_num)
     return result, hidden
