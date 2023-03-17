@@ -6,6 +6,7 @@ GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 QUESTION = randint(1, 50)
 ANSWER = {True: 'yes', False: 'no'}
 
+
 def prime_number(num):
     x = math.sqrt(num)
     i = 2
