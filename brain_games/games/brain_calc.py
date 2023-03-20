@@ -2,23 +2,23 @@ from random import randint, choice
 
 
 GAME_RULE = 'What is the result of the expression?'
-NUM1 = randint(1, 50)
-NUM2 = randint(1, 50)
 OPERATIONS = ('+', '-', '*')
 
 
-def operation_choice(operation, NUM1, NUM2):
+def operation_choice(operation, num1, num2):
     if operation == '+':
-        correct_answer = NUM1 + NUM2
+        correct_answer = num1 + num2
     elif operation == '-':
-        correct_answer = NUM1 - NUM2
+        correct_answer = num1 - num2
     elif operation == '*':
-        correct_answer = NUM1 * NUM2
+        correct_answer = num1 * num2
     return correct_answer
 
 
 def get_question_and_answer():
+    num1 = randint(1, 50)
+    num2 = randint(1, 50)
     operation = choice(OPERATIONS)
-    question = f"{NUM1} {operation} {NUM2}"
-    correct_answer = str(operation_choice(operation, NUM1, NUM2))
+    question = f"{num1} {operation} {num2}"
+    correct_answer = str(operation_choice(operation, num1, num2))
     return correct_answer, question
