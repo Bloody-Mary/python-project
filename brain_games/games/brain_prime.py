@@ -19,7 +19,7 @@ def is_prime(num):
 def get_question_and_answer():
     num = randint(1, 50)
     if not is_prime(num):
-        correct-answer = 'no'
+        correct_answer = 'no'
     else:
         correct_answer = 'yes'
     return correct_answer, question
