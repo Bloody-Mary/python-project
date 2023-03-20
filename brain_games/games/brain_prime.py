@@ -3,11 +3,9 @@ import math
 
 
 GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-QUESTION = randint(1, 50)
-ANSWER = {True: 'yes', False: 'no'}
 
 
-def prime_number(num):
+def is_prime(num):
     x = math.sqrt(num)
     i = 2
     while i <= x:
@@ -18,14 +16,10 @@ def prime_number(num):
     return True
 
 
-def bool_answer(QUESTION):
-    if prime_number(QUESTION):
-        return ANSWER[True]
-    else:
-        return ANSWER[False]
-
-
 def get_question_and_answer():
-    correct_answer = bool_answer(QUESTION)
-    question = str(QUESTION)
-    return str(correct_answer), question
+    num = randint(1, 50)
+    if not is_prime(num):
+        correct-answer = 'no'
+    else:
+        correct_answer = 'yes'
+    return correct_answer, question
