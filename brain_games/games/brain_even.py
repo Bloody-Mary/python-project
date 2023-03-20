@@ -15,5 +15,5 @@ def is_even(number):
 
 def get_question_and_answer():
     question = RAND_NUM
-    correct_answer = bool_answer(question)
+    correct_answer = is_even(question)
     return correct_answer, question
