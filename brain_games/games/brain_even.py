@@ -6,7 +6,7 @@ RAND_NUM = randint(1, 100)
 ANSWER = {True: 'yes', False: 'no'}
 
 
-def bool_answer(number):
+def is_even(number):
     if number % 2 == 0:
         return ANSWER[True]
     else:
