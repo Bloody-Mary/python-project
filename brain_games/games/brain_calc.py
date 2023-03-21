@@ -3,6 +3,8 @@ from random import randint, choice
 
 GAME_RULE = 'What is the result of the expression?'
 OPERATIONS = ('+', '-', '*')
+FIRST_NUM = 1
+LAST_NUM = 50
 
 
 def operation_choice(operation, num1, num2):
@@ -16,8 +18,8 @@ def operation_choice(operation, num1, num2):
 
 
 def get_question_and_answer():
-    num1 = randint(1, 50)
-    num2 = randint(1, 50)
+    num1 = randint(FIRST_NUM, LAST_NUM)
+    num2 = randint(FIRST_NUM, LAST_NUM)
     operation = choice(OPERATIONS)
     question = f"{num1} {operation} {num2}"
     correct_answer = str(operation_choice(operation, num1, num2))
