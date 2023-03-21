@@ -12,8 +12,8 @@ def is_even(number):
 
 def get_question_and_answer():
     question = randint(FIRST_NUM, LAST_NUM)
-    correct_answer = 'no'
+    correct_answer = 'yes'
     if is_even(question):
-        correct_answer = 'yes'
+        correct_answer = 'no'
         return correct_answer, question
     return correct_answer, question
