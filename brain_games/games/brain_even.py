@@ -7,7 +7,7 @@ LAST_NUM = 100
 
 
 def is_even(number):
-    return number & 2 == 0
+    return number % 2 == 0
 
 
 def get_question_and_answer():
@@ -16,4 +16,4 @@ def get_question_and_answer():
     if is_even(question):
         correct_answer = 'yes'
         return question, correct_answer
-    return correct_answer, question
+    return question, correct_answer
