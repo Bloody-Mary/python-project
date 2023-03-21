@@ -22,3 +22,4 @@ def start_game(game_name):
         print('Correct!')
         counter += 1
     print(f'Congratulations, {name}!')
+    
