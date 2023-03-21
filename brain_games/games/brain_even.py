@@ -15,5 +15,5 @@ def get_question_and_answer():
     correct_answer = 'no'
     if is_even(question):
         correct_answer = 'yes'
-        return question, correct_answer
-    return question, correct_answer
+        return correct_answer, question
+    return correct_answer, question
