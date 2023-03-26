@@ -7,11 +7,15 @@ FIRST_NUM = 1
 LAST_NUM = 100
 
 
+def is_even(number):
+    return number % 2 == 0
+
+
 def get_question_and_answer():
     question = randint(FIRST_NUM, LAST_NUM)
-    rand_num = (question % 2 == 0)
-    if utils.boolean_to_answer(rand_num):
-        correct_answer = 'yes'
-    else:
-        correct_answer = 'no'
+    # rand_num = (question % 2 == 0)
+    if is_even(question) == True:
+        return boolean_to_answer(correct_answer)
+    elif is_even(question) == False:
+        return boolean_to_answer(correct_answer)
     return correct_answer, question
