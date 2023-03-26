@@ -8,7 +8,8 @@ LAST_NUM = 100
 
 
 def is_even(number):
-    return number % 2 == 0
+    if number % 2 == 0:
+        return utils.boolean_to_answer(number)
 
 
 def get_question_and_answer():
