@@ -21,7 +21,7 @@ def is_prime(num):
 
 def get_question_and_answer():
     question = randint(FIRST_NUM, LAST_NUM)
-    if utils.boolean_to_answer(question) == True:
+    if utils.boolean_to_answer(question):
        correct_answer = 'yes'
     else:
        correct_answer = 'no'
