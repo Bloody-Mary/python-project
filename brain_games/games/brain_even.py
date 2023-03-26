@@ -15,6 +15,5 @@ def is_even(number):
 
 def get_question_and_answer():
     question = randint(FIRST_NUM, LAST_NUM)
-    correct_answer = 'no'
     correct_answer = is_even(question)
     return str(correct_answer), question
