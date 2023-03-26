@@ -8,9 +8,10 @@ LAST_NUM = 100
 
 
 def get_question_and_answer():
-    rand_num = randint(FIRST_NUM, LAST_NUM)
-    question = str(rand_num)
-    if utils.boolean_to_answer(rand_num) % 2 == 0:
+    num = randint(FIRST_NUM, LAST_NUM)
+    question = str(num)
+    rand_num = num % 2
+    if utils.boolean_to_answer(rand_num) == 0:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
