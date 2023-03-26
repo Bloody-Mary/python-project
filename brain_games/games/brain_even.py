@@ -16,6 +16,4 @@ def get_question_and_answer():
     correct_answer = False
     if is_even(question):
         return utils.boolean_to_answer(correct_answer)
-    elif is_even(question):
-        return utils.boolean_to_answer(correct_answer)
     return str(correct_answer), question
