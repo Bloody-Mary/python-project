@@ -13,7 +13,7 @@ def is_even(number):
 
 def get_question_and_answer():
     question = randint(FIRST_NUM, LAST_NUM)
-    correct_answer = False
+    correct_answer = True
     if is_even(question):
         return utils.boolean_to_answer(correct_answer)
     return str(correct_answer), question
