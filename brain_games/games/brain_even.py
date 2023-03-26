@@ -18,4 +18,4 @@ def get_question_and_answer():
         return utils.boolean_to_answer(correct_answer)
     elif is_even(question):
         return utils.boolean_to_answer(correct_answer)
-    return correct_answer, question
+    return str(correct_answer), question
