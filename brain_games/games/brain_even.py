@@ -13,4 +13,5 @@ def is_even(number):
 
 def get_question_and_answer():
     question = randint(FIRST_NUM, LAST_NUM)
-    return utils.boolean_to_answer(is_even(question)), question
+    correct_answer = utils.boolean_to_answer(is_even(question))
+    return correct_answer, question

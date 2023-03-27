@@ -21,4 +21,5 @@ def is_prime(num):
 
 def get_question_and_answer():
     question = randint(FIRST_NUM, LAST_NUM)
-    return utils.boolean_to_answer(is_prime(question)), question
+    correct_answer = utils.boolean_to_answer(is_prime(question))
+    return correct_answer, question
