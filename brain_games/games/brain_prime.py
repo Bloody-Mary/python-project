@@ -1,4 +1,4 @@
-from brain_games.scripts import utils
+from . import utils
 from random import randint
 import math
 

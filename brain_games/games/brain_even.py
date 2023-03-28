@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.scripts import utils
+from . import utils
 
 
 GAME_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
