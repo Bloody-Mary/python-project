@@ -1,4 +1,4 @@
-from . import utils
+import utils
 from random import randint
 from math import sqrt
 
