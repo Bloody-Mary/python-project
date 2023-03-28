@@ -1,6 +1,6 @@
 from . import utils
 from random import randint
-import math
+from math import sqrt
 
 
 GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -9,7 +9,7 @@ LAST_NUM = 50
 
 
 def is_prime(num):
-    x = math.sqrt(num)
+    x = sqrt(num)
     i = 2
     while i <= x:
         if num % i == 0:
